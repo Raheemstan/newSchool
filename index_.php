@@ -1,8 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-
-<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:24:43 GMT -->
+<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:20:39 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -909,5 +908,5 @@
 </body>
 
 
-<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:24:43 GMT -->
+<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:24:01 GMT -->
 </html>
