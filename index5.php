@@ -2,7 +2,8 @@
 <html class="no-js" lang="">
 
 
-<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/index5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:24:50 GMT -->
+<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/index5.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:24:50 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,11 +41,11 @@
         <div class="navbar navbar-expand-md header-menu-one bg-light">
             <div class="nav-bar-header-one">
                 <div class="header-logo">
-                    <a href="index-2.html">
+                    <a href="index.php">
                         <img src="img/logo.png" alt="logo">
                     </a>
                 </div>
-                  <div class="toggle-button sidebar-toggle">
+                <div class="toggle-button sidebar-toggle">
                     <button type="button" class="item-link">
                         <span class="btn-icon-wrap">
                             <span></span>
@@ -55,7 +56,7 @@
                 </div>
             </div>
             <div class="d-md-none mobile-nav-bar">
-               <button class="navbar-toggler pulse-animation" type="button" data-toggle="collapse" data-target="#mobile-navbar" aria-expanded="false">
+                <button class="navbar-toggler pulse-animation" type="button" data-toggle="collapse" data-target="#mobile-navbar" aria-expanded="false">
                     <i class="far fa-arrow-alt-circle-down"></i>
                 </button>
                 <button type="button" class="navbar-toggler sidebar-toggle-mobile">
@@ -77,8 +78,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="navbar-item dropdown header-admin">
-                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                             <div class="admin-title">
                                 <h5 class="item-title">Stevne Zone</h5>
                                 <span>Admin</span>
@@ -97,14 +97,13 @@
                                     <li><a href="#"><i class="flaticon-list"></i>Task</a></li>
                                     <li><a href="#"><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i>Message</a></li>
                                     <li><a href="#"><i class="flaticon-gear-loading"></i>Account Settings</a></li>
-                                    <li><a href="login.html"><i class="flaticon-turn-off"></i>Log Out</a></li>
+                                    <li><a href="login.php"><i class="flaticon-turn-off"></i>Log Out</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
                     <li class="navbar-item dropdown header-message">
-                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                             <i class="far fa-envelope"></i>
                             <div class="item-title d-md-none text-16 mg-l-10">Message</div>
                             <span>5</span>
@@ -122,12 +121,12 @@
                                     <div class="media-body space-sm">
                                         <div class="item-title">
                                             <a href="#">
-                                                <span class="item-name">Maria Zaman</span> 
-                                                <span class="item-time">18:30</span> 
-                                            </a>  
+                                                <span class="item-name">Maria Zaman</span>
+                                                <span class="item-time">18:30</span>
+                                            </a>
                                         </div>
-                                        <p>What is the reason of buy this item. 
-                                        Is it usefull for me.....</p>
+                                        <p>What is the reason of buy this item.
+                                            Is it usefull for me.....</p>
                                     </div>
                                 </div>
                                 <div class="media">
@@ -137,12 +136,12 @@
                                     <div class="media-body space-sm">
                                         <div class="item-title">
                                             <a href="#">
-                                                <span class="item-name">Benny Roy</span> 
-                                                <span class="item-time">10:35</span> 
-                                            </a>  
+                                                <span class="item-name">Benny Roy</span>
+                                                <span class="item-time">10:35</span>
+                                            </a>
                                         </div>
-                                        <p>What is the reason of buy this item. 
-                                        Is it usefull for me.....</p>
+                                        <p>What is the reason of buy this item.
+                                            Is it usefull for me.....</p>
                                     </div>
                                 </div>
                                 <div class="media">
@@ -152,12 +151,12 @@
                                     <div class="media-body space-sm">
                                         <div class="item-title">
                                             <a href="#">
-                                                <span class="item-name">Steven</span> 
-                                                <span class="item-time">02:35</span> 
-                                            </a>  
+                                                <span class="item-name">Steven</span>
+                                                <span class="item-time">02:35</span>
+                                            </a>
                                         </div>
-                                        <p>What is the reason of buy this item. 
-                                        Is it usefull for me.....</p>
+                                        <p>What is the reason of buy this item.
+                                            Is it usefull for me.....</p>
                                     </div>
                                 </div>
                                 <div class="media">
@@ -167,20 +166,19 @@
                                     <div class="media-body space-sm">
                                         <div class="item-title">
                                             <a href="#">
-                                                <span class="item-name">Joshep Joe</span> 
-                                                <span class="item-time">12:35</span> 
-                                            </a>  
+                                                <span class="item-name">Joshep Joe</span>
+                                                <span class="item-time">12:35</span>
+                                            </a>
                                         </div>
-                                        <p>What is the reason of buy this item. 
-                                        Is it usefull for me.....</p>
+                                        <p>What is the reason of buy this item.
+                                            Is it usefull for me.....</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="navbar-item dropdown header-notification">
-                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                             <i class="far fa-bell"></i>
                             <div class="item-title d-md-none text-16 mg-l-10">Notification</div>
                             <span>8</span>
@@ -221,9 +219,8 @@
                             </div>
                         </div>
                     </li>
-                     <li class="navbar-item dropdown header-language">
-                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" 
-                        data-toggle="dropdown" aria-expanded="false"><i class="fas fa-globe-americas"></i>EN</a>
+                    <li class="navbar-item dropdown header-language">
+                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-globe-americas"></i>EN</a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="#">English</a>
                             <a class="dropdown-item" href="#">Spanish</a>
@@ -238,28 +235,28 @@
         <!-- Page Area Start Here -->
         <div class="dashboard-page-one">
             <!-- Sidebar Area Start Here -->
-           <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
-               <div class="mobile-sidebar-header d-md-none">
+            <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
+                <div class="mobile-sidebar-header d-md-none">
                     <div class="header-logo">
-                        <a href="index-2.html"><img src="img/logo1.png" alt="logo"></a>
+                        <a href="index.php"><img src="img/logo1.png" alt="logo"></a>
                     </div>
-               </div>
+                </div>
                 <div class="sidebar-menu-content">
                     <ul class="nav nav-sidebar-menu sidebar-toggle-view">
                         <li class="nav-item sidebar-nav-item">
                             <a href="#" class="nav-link"><i class="flaticon-dashboard"></i><span>Dashboard</span></a>
                             <ul class="nav sub-group-menu sub-group-active">
                                 <li class="nav-item">
-                                    <a href="index-2.html" class="nav-link"><i class="fas fa-angle-right"></i>Admin</a>
+                                    <a href="index.php" class="nav-link"><i class="fas fa-angle-right"></i>Admin</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index3.html" class="nav-link"><i class="fas fa-angle-right"></i>Students</a>
+                                    <a href="index3.php" class="nav-link"><i class="fas fa-angle-right"></i>Students</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index4.html" class="nav-link"><i class="fas fa-angle-right"></i>Parents</a>
+                                    <a href="index4.php" class="nav-link"><i class="fas fa-angle-right"></i>Parents</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index5.html" class="nav-link menu-active"><i class="fas fa-angle-right"></i>Teachers</a>
+                                    <a href="index5.php" class="nav-link menu-active"><i class="fas fa-angle-right"></i>Teachers</a>
                                 </li>
                             </ul>
                         </li>
@@ -267,16 +264,16 @@
                             <a href="#" class="nav-link"><i class="flaticon-classmates"></i><span>Students</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-student.html" class="nav-link"><i class="fas fa-angle-right"></i>All Students</a>
+                                    <a href="all-student.php" class="nav-link"><i class="fas fa-angle-right"></i>All Students</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="student-details.html" class="nav-link"><i class="fas fa-angle-right"></i>Student Details</a>
+                                    <a href="student-details.php" class="nav-link"><i class="fas fa-angle-right"></i>Student Details</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="admit-form.html" class="nav-link"><i class="fas fa-angle-right"></i>Admission Form</a>
+                                    <a href="admit-form.php" class="nav-link"><i class="fas fa-angle-right"></i>Admission Form</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="student-promotion.html" class="nav-link"><i class="fas fa-angle-right"></i>Student Promotion</a>
+                                    <a href="student-promotion.php" class="nav-link"><i class="fas fa-angle-right"></i>Student Promotion</a>
                                 </li>
                             </ul>
                         </li>
@@ -284,16 +281,16 @@
                             <a href="#" class="nav-link"><i class="flaticon-multiple-users-silhouette"></i><span>Teachers</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>All Teachers</a>
+                                    <a href="all-teacher.php" class="nav-link"><i class="fas fa-angle-right"></i>All Teachers</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="teacher-details.html" class="nav-link"><i class="fas fa-angle-right"></i>Teacher Details</a>
+                                    <a href="teacher-details.php" class="nav-link"><i class="fas fa-angle-right"></i>Teacher Details</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="add-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>Add Teacher</a>
+                                    <a href="add-teacher.php" class="nav-link"><i class="fas fa-angle-right"></i>Add Teacher</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="teacher-payment.html" class="nav-link"><i class="fas fa-angle-right"></i>Payment</a>
+                                    <a href="teacher-payment.php" class="nav-link"><i class="fas fa-angle-right"></i>Payment</a>
                                 </li>
                             </ul>
                         </li>
@@ -301,13 +298,13 @@
                             <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Parents</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>All Parents</a>
+                                    <a href="all-parents.php" class="nav-link"><i class="fas fa-angle-right"></i>All Parents</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="parents-details.html" class="nav-link"><i class="fas fa-angle-right"></i>Parents Details</a>
+                                    <a href="parents-details.php" class="nav-link"><i class="fas fa-angle-right"></i>Parents Details</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="add-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>Add Parent</a>
+                                    <a href="add-parents.php" class="nav-link"><i class="fas fa-angle-right"></i>Add Parent</a>
                                 </li>
                             </ul>
                         </li>
@@ -315,10 +312,10 @@
                             <a href="#" class="nav-link"><i class="flaticon-books"></i><span>Library</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-book.html" class="nav-link"><i class="fas fa-angle-right"></i>All Book</a>
+                                    <a href="all-book.php" class="nav-link"><i class="fas fa-angle-right"></i>All Book</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="add-book.html" class="nav-link"><i class="fas fa-angle-right"></i>Add New Book</a>
+                                    <a href="add-book.php" class="nav-link"><i class="fas fa-angle-right"></i>Add New Book</a>
                                 </li>
                             </ul>
                         </li>
@@ -326,13 +323,13 @@
                             <a href="#" class="nav-link"><i class="flaticon-technological"></i><span>Acconunt</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-fees.html" class="nav-link"><i class="fas fa-angle-right"></i>All Fees Collection</a>
+                                    <a href="all-fees.php" class="nav-link"><i class="fas fa-angle-right"></i>All Fees Collection</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="all-expense.html" class="nav-link"><i class="fas fa-angle-right"></i>Expenses</a>
+                                    <a href="all-expense.php" class="nav-link"><i class="fas fa-angle-right"></i>Expenses</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="add-expense.html" class="nav-link"><i class="fas fa-angle-right"></i>Add Expenses</a>
+                                    <a href="add-expense.php" class="nav-link"><i class="fas fa-angle-right"></i>Add Expenses</a>
                                 </li>
                             </ul>
                         </li>
@@ -340,77 +337,76 @@
                             <a href="#" class="nav-link"><i class="flaticon-maths-class-materials-cross-of-a-pencil-and-a-ruler"></i><span>Class</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="all-class.html" class="nav-link"><i class="fas fa-angle-right"></i>All Classes</a>
+                                    <a href="all-class.php" class="nav-link"><i class="fas fa-angle-right"></i>All Classes</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="add-class.html" class="nav-link"><i class="fas fa-angle-right"></i>Add New Class</a>
+                                    <a href="add-class.php" class="nav-link"><i class="fas fa-angle-right"></i>Add New Class</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="all-subject.html" class="nav-link"><i class="flaticon-open-book"></i><span>Subject</span></a>
+                            <a href="all-subject.php" class="nav-link"><i class="flaticon-open-book"></i><span>Subject</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="class-routine.html" class="nav-link"><i class="flaticon-calendar"></i><span>Class Routine</span></a>
+                            <a href="class-routine.php" class="nav-link"><i class="flaticon-calendar"></i><span>Class Routine</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="student-attendence.html" class="nav-link"><i class="flaticon-checklist"></i><span>Attendence</span></a>
+                            <a href="student-attendence.php" class="nav-link"><i class="flaticon-checklist"></i><span>Attendence</span></a>
                         </li>
                         <li class="nav-item sidebar-nav-item">
                             <a href="#" class="nav-link"><i class="flaticon-shopping-list"></i><span>Exam</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="exam-schedule.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam Schedule</a>
+                                    <a href="exam-schedule.php" class="nav-link"><i class="fas fa-angle-right"></i>Exam Schedule</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="exam-grade.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam Grades</a>
+                                    <a href="exam-grade.php" class="nav-link"><i class="fas fa-angle-right"></i>Exam Grades</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="transport.html" class="nav-link"><i class="flaticon-bus-side-view"></i><span>Transport</span></a>
+                            <a href="transport.php" class="nav-link"><i class="flaticon-bus-side-view"></i><span>Transport</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="hostel.html" class="nav-link"><i class="flaticon-bed"></i><span>Hostel</span></a>
+                            <a href="hostel.php" class="nav-link"><i class="flaticon-bed"></i><span>Hostel</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="notice-board.html" class="nav-link"><i class="flaticon-script"></i><span>Notice</span></a>
+                            <a href="notice-board.php" class="nav-link"><i class="flaticon-script"></i><span>Notice</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="messaging.html" class="nav-link"><i class="flaticon-chat"></i><span>Messeage</span></a>
+                            <a href="messaging.php" class="nav-link"><i class="flaticon-chat"></i><span>Messeage</span></a>
                         </li>
-                         <li class="nav-item sidebar-nav-item">
+                        <li class="nav-item sidebar-nav-item">
                             <a href="#" class="nav-link"><i class="flaticon-menu-1"></i><span>UI Elements</span></a>
                             <ul class="nav sub-group-menu">
                                 <li class="nav-item">
-                                    <a href="notification-alart.html" class="nav-link"><i class="fas fa-angle-right"></i>Alart</a>
+                                    <a href="notification-alart.php" class="nav-link"><i class="fas fa-angle-right"></i>Alart</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="button.html" class="nav-link"><i class="fas fa-angle-right"></i>Button</a>
+                                    <a href="button.php" class="nav-link"><i class="fas fa-angle-right"></i>Button</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="grid.html" class="nav-link"><i class="fas fa-angle-right"></i>Grid</a>
+                                    <a href="grid.php" class="nav-link"><i class="fas fa-angle-right"></i>Grid</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="modal.html" class="nav-link"><i class="fas fa-angle-right"></i>Modal</a>
+                                    <a href="modal.php" class="nav-link"><i class="fas fa-angle-right"></i>Modal</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="progress-bar.html" class="nav-link"><i class="fas fa-angle-right"></i>Progress Bar</a>
+                                    <a href="progress-bar.php" class="nav-link"><i class="fas fa-angle-right"></i>Progress Bar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="ui-tab.html" class="nav-link"><i class="fas fa-angle-right"></i>Tab</a>
+                                    <a href="ui-tab.php" class="nav-link"><i class="fas fa-angle-right"></i>Tab</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="ui-widget.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Widget</a>
+                                    <a href="ui-widget.php" class="nav-link"><i class="fas fa-angle-right"></i>Widget</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="map.html" class="nav-link"><i class="flaticon-planet-earth"></i><span>Map</span></a>
+                            <a href="map.php" class="nav-link"><i class="flaticon-planet-earth"></i><span>Map</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="account-settings.html" class="nav-link"><i class="flaticon-settings"></i><span>Account</span></a>
+                            <a href="account-settings.php" class="nav-link"><i class="flaticon-settings"></i><span>Account</span></a>
                         </li>
                     </ul>
                 </div>
@@ -422,7 +418,7 @@
                     <h3>Admin Dashboard</h3>
                     <ul>
                         <li>
-                            <a href="index-2.html">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>Teachers</li>
                     </ul>
@@ -487,10 +483,9 @@
                                     <div class="item-title">
                                         <h3>Students</h3>
                                     </div>
-                                   <div class="dropdown">
-                                        <a class="dropdown-toggle" href="#" role="button" 
-                                        data-toggle="dropdown" aria-expanded="false">...</a>
-                
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">...</a>
+
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
                                             <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
@@ -523,10 +518,9 @@
                                     <div class="item-title">
                                         <h3>Notifications</h3>
                                     </div>
-                                   <div class="dropdown">
-                                        <a class="dropdown-toggle" href="#" role="button" 
-                                        data-toggle="dropdown" aria-expanded="false">...</a>
-                
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">...</a>
+
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
                                             <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
@@ -538,34 +532,34 @@
                                     <div class="notice-list">
                                         <div class="post-date bg-skyblue">16 June, 2019</div>
                                         <h6 class="notice-title"><a href="#">Great School manag mene esom tus eleifend lectus
-                                            sed maximus mi faucibusnting.</a></h6>
-                                        <div class="entry-meta">  Jennyfar Lopez / <span>5 min ago</span></div>
+                                                sed maximus mi faucibusnting.</a></h6>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
                                     </div>
                                     <div class="notice-list">
                                         <div class="post-date bg-yellow">16 June, 2019</div>
                                         <h6 class="notice-title"><a href="#">Great School manag printing.</a></h6>
-                                        <div class="entry-meta">  Jennyfar Lopez / <span>5 min ago</span></div>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
                                     </div>
                                     <div class="notice-list">
                                         <div class="post-date bg-pink">16 June, 2019</div>
                                         <h6 class="notice-title"><a href="#">Great School manag Nulla rhoncus eleifensed mim
-                                            us mi faucibus id. Mauris vestibulum non purus lobortismenearea</a></h6>
-                                        <div class="entry-meta">  Jennyfar Lopez / <span>5 min ago</span></div>
+                                                us mi faucibus id. Mauris vestibulum non purus lobortismenearea</a></h6>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
                                     </div>
                                     <div class="notice-list">
                                         <div class="post-date bg-skyblue">16 June, 2019</div>
-                                        <h6 class="notice-title"><a href="#">Great School manag mene esom  text of the printing.</a></h6>
-                                        <div class="entry-meta">  Jennyfar Lopez / <span>5 min ago</span></div>
+                                        <h6 class="notice-title"><a href="#">Great School manag mene esom text of the printing.</a></h6>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
                                     </div>
                                     <div class="notice-list">
                                         <div class="post-date bg-yellow">16 June, 2019</div>
                                         <h6 class="notice-title"><a href="#">Great School manag printing.</a></h6>
-                                        <div class="entry-meta">  Jennyfar Lopez / <span>5 min ago</span></div>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
                                     </div>
                                     <div class="notice-list">
                                         <div class="post-date bg-pink">16 June, 2019</div>
                                         <h6 class="notice-title"><a href="#">Great School manag meneesom.</a></h6>
-                                        <div class="entry-meta">  Jennyfar Lopez / <span>5 min ago</span></div>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -582,10 +576,9 @@
                                     <div class="item-title">
                                         <h3>My Students</h3>
                                     </div>
-                                   <div class="dropdown">
-                                        <a class="dropdown-toggle" href="#" role="button" 
-                                        data-toggle="dropdown" aria-expanded="false">...</a>
-                
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">...</a>
+
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
                                             <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
@@ -614,7 +607,7 @@
                                         <table class="table display data-table text-nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th> 
+                                                    <th>
                                                         <div class="form-check">
                                                             <input type="checkbox" class="form-check-input checkAll">
                                                             <label class="form-check-label">Roll</label>
@@ -652,22 +645,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -687,22 +675,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -722,22 +705,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -757,22 +735,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -792,22 +765,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -827,22 +795,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -862,22 +825,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -897,22 +855,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -932,22 +885,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -967,22 +915,17 @@
                                                     <td>+ 123 9988568</td>
                                                     <td>kazifahim93@gmail.com</td>
                                                     <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle"
-                                                                        data-toggle="dropdown" aria-expanded="false">
-                                                                        <span
-                                                                            class="flaticon-more-button-of-three-dots"></span>
-                                                                    </a>
-                                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-times text-orange-red"></i>Close</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                                                                        <a class="dropdown-item" href="#"><i
-                                                                                class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="flaticon-more-button-of-three-dots"></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -996,7 +939,7 @@
                 <footer class="footer-wrap-layout1">
                     <div class="copyright">© Copyrights <a href="#">akkhor</a> 2019. All rights reserved. Designed by <a href="#">PsdBosS</a></div>
                 </footer>
-                
+
             </div>
         </div>
         <!-- Page Area End Here -->
@@ -1025,5 +968,6 @@
 </body>
 
 
-<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/index5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:25:00 GMT -->
+<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/index5.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:25:00 GMT -->
+
 </html>

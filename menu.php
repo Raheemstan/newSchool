@@ -1,13 +1,18 @@
+<?php
+include('dbc.php');
+if (!$_SESSION['valid_user']) {
+    header('location: login.php');
+}
+
+
+?>
 <!doctype html>
 <html class="no-js" lang="">
-
-
-<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Oct 2023 04:24:43 GMT -->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>AKKHOR | Home 1</title>
+    <title>AKKHOR | <?php print $name = (isset($page)) ? $page : "Optimal Education Management"; ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
