@@ -4,7 +4,6 @@ if (!$_SESSION['valid_user']) {
     header('location: login.php');
 }
 
-
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -27,12 +26,18 @@ if (!$_SESSION['valid_user']) {
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Flaticon CSS -->
     <link rel="stylesheet" href="fonts/flaticon.css">
+    <!-- Select 2 CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- Date Picker CSS -->
+    <link rel="stylesheet" href="css/datepicker.min.css">
     <!-- Full Calender CSS -->
     <link rel="stylesheet" href="css/fullcalendar.min.css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="css/datatables.css">
     <!-- Modernize js -->
     <script src="js/modernizr-3.6.0.min.js"></script>
 </head>
@@ -431,3 +436,39 @@ if (!$_SESSION['valid_user']) {
                 </div>
             </div>
             <!-- Sidebar Area End Here -->
+            <div class="dashboard-content-one">
+                <!-- Breadcubs Area Start Here -->
+                <?php
+                if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
+                ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?php echo $_SESSION['error'];
+                        unset($_SESSION['error']); ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <?
+                } elseif (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
+                ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?php echo $_SESSION['success'];
+                        unset($_SESSION['success']); ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                <?php
+                } elseif (isset($_SESSION['warning']) && !empty($_SESSION['warning'])) {
+                ?>
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        <?php echo $_SESSION['warning'];
+                        unset($_SESSION['warning']); ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <?php
+                }
+                ?>

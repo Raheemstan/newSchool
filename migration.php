@@ -3,6 +3,52 @@ include('dbc.php');
 
 $link->select_db($dbname);
 
+// Create classes table
+$sql = "CREATE TABLE IF NOT EXISTS classes (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+)";
+
+if ($link->query($sql) === TRUE) {
+    echo "Table 'classes' created successfully\n";
+} else {
+    echo "Error creating table 'classes': " . $link->error;
+}
+
+// Insert sample data into the classes table
+$insertClassData = "INSERT INTO classes (name) VALUES 
+    ('Jss1'),
+    ('Jss2'),
+    ('Jss3'),
+    ('Sss1'),
+    ('Sss2'),
+    ('Sss3')";
+
+if ($link->query($insertClassData) === TRUE) {
+    echo "Sample data inserted into 'classes' table successfully\n";
+}
+
+// Create section table
+$sql = "CREATE TABLE IF NOT EXISTS sections (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+)";
+
+if ($link->query($sql) === TRUE) {
+    echo "Table 'sections' created successfully\n";
+} else {
+    echo "Error creating table 'sections': " . $link->error;
+}
+
+// Insert sample data into the sections table
+$insertSectionData = "INSERT INTO sections (name) VALUES
+    ('A'),
+    ('B'),
+    ('C')";
+
+if ($link->query($insertSectionData) === TRUE) {
+    echo "Sample data inserted into 'sections' table successfully\n";
+}
 // Create users table
 $sql = "CREATE TABLE IF NOT EXISTS users (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -29,30 +75,25 @@ if ($link->query($insertUsersData) === TRUE) {
 }
 
 // Create students table
-$sql = "CREATE TABLE IF NOT EXISTS students (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+$sql = "
+CREATE TABLE IF NOT EXISTS students (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
-    birthdate DATE NOT NULL,
-    gender CHAR(6) NOT NULL,
-    registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)";
+    gender ENUM('Male', 'Female') NOT NULL,
+    date_of_birth DATE NOT NULL,
+    class_id VARCHAR(50),
+    section_id VARCHAR(50),
+    admission_id VARCHAR(50) NOT NULL UNIQUE,
+    phone VARCHAR(20),
+    photo_path VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);";
 if ($link->query($sql) === TRUE) {
     echo "Table 'students' created successfully\n";
 } else {
     echo "Error creating table 'students': " . $link->error;
-}
-
-// Insert sample data into the students table
-$insertStudentsData = "INSERT INTO students (first_name, last_name, birthdate, gender) VALUES 
-    ('John', 'Doe', '1995-05-15', 'male'),
-    ('Jane', 'Smith', '1998-08-22', 'female'),
-    ('Mark', 'Johnson', '1997-04-10', 'male')";
-
-if ($link->query($insertStudentsData) === TRUE) {
-    echo "Sample data inserted into 'students' table successfully\n";
-} else {
-    echo "Error inserting sample data into 'students' table: " . $link->error;
 }
 
 // Create teachers table
