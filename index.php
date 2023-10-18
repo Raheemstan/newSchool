@@ -15,7 +15,7 @@ include('menu.php');
 <!-- Breadcubs Area End Here -->
 <!-- Dashboard summery Start Here -->
 <div class="row gutters-20">
-    <div class="col-xl-3 col-sm-6 col-12">
+    <div class="col-xl-4 col-sm-6 col-12">
         <div class="dashboard-summery-one mg-b-20">
             <div class="row align-items-center">
                 <div class="col-6">
@@ -32,7 +32,7 @@ include('menu.php');
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-sm-6 col-12">
+    <div class="col-xl-4 col-sm-6 col-12">
         <div class="dashboard-summery-one mg-b-20">
             <div class="row align-items-center">
                 <div class="col-6">
@@ -49,24 +49,7 @@ include('menu.php');
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-sm-6 col-12">
-        <div class="dashboard-summery-one mg-b-20">
-            <div class="row align-items-center">
-                <div class="col-6">
-                    <div class="item-icon bg-light-yellow">
-                        <i class="flaticon-couple text-orange"></i>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="item-content">
-                        <div class="item-title">Parents</div>
-                        <div class="item-number"><span class="counter" data-num="5690">5,690</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-sm-6 col-12">
+    <div class="col-xl-4 col-sm-6 col-12">
         <div class="dashboard-summery-one mg-b-20">
             <div class="row align-items-center">
                 <div class="col-6">
@@ -143,63 +126,8 @@ include('menu.php');
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-6 col-xl-6 col-4-xxxl">
-        <div class="card dashboard-card-six pd-b-20">
-            <div class="card-body">
-                <div class="heading-layout1 mg-b-17">
-                    <div class="item-title">
-                        <h3>Notice Board</h3>
-                    </div>
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">...</a>
-
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
-                            <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
-                            <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="notice-box-wrap">
-                    <div class="notice-list">
-                        <div class="post-date bg-skyblue">16 June, 2019</div>
-                        <h6 class="notice-title"><a href="#">Great School manag mene esom text of the
-                                printing.</a></h6>
-                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
-                    </div>
-                    <div class="notice-list">
-                        <div class="post-date bg-yellow">16 June, 2019</div>
-                        <h6 class="notice-title"><a href="#">Great School manag printing.</a></h6>
-                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
-                    </div>
-                    <div class="notice-list">
-                        <div class="post-date bg-pink">16 June, 2019</div>
-                        <h6 class="notice-title"><a href="#">Great School manag meneesom.</a></h6>
-                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
-                    </div>
-                    <div class="notice-list">
-                        <div class="post-date bg-skyblue">16 June, 2019</div>
-                        <h6 class="notice-title"><a href="#">Great School manag mene esom text of the
-                                printing.</a></h6>
-                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
-                    </div>
-                    <div class="notice-list">
-                        <div class="post-date bg-yellow">16 June, 2019</div>
-                        <h6 class="notice-title"><a href="#">Great School manag printing.</a></h6>
-                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
-                    </div>
-                    <div class="notice-list">
-                        <div class="post-date bg-pink">16 June, 2019</div>
-                        <h6 class="notice-title"><a href="#">Great School manag meneesom.</a></h6>
-                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>  
 </div>
 <!-- Dashboard Content End Here -->
 <?php
-
 include('footer.php');

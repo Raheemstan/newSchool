@@ -103,87 +103,9 @@ if (!$_SESSION['valid_user']) {
                             </div>
                             <div class="item-content">
                                 <ul class="settings-list">
-                                    <li><a href="#"><i class="flaticon-user"></i>My Profile</a></li>
-                                    <li><a href="#"><i class="flaticon-list"></i>Task</a></li>
-                                    <li><a href="#"><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i>Message</a></li>
                                     <li><a href="#"><i class="flaticon-gear-loading"></i>Account Settings</a></li>
                                     <li><a href="login.php"><i class="flaticon-turn-off"></i>Log Out</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="navbar-item dropdown header-message">
-                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            <i class="far fa-envelope"></i>
-                            <div class="item-title d-md-none text-16 mg-l-10">Message</div>
-                            <span>5</span>
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <div class="item-header">
-                                <h6 class="item-title">05 Message</h6>
-                            </div>
-                            <div class="item-content">
-                                <div class="media">
-                                    <div class="item-img bg-skyblue author-online">
-                                        <img src="img/figure/student11.png" alt="img">
-                                    </div>
-                                    <div class="media-body space-sm">
-                                        <div class="item-title">
-                                            <a href="#">
-                                                <span class="item-name">Maria Zaman</span>
-                                                <span class="item-time">18:30</span>
-                                            </a>
-                                        </div>
-                                        <p>What is the reason of buy this item.
-                                            Is it usefull for me.....</p>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="item-img bg-yellow author-online">
-                                        <img src="img/figure/student12.png" alt="img">
-                                    </div>
-                                    <div class="media-body space-sm">
-                                        <div class="item-title">
-                                            <a href="#">
-                                                <span class="item-name">Benny Roy</span>
-                                                <span class="item-time">10:35</span>
-                                            </a>
-                                        </div>
-                                        <p>What is the reason of buy this item.
-                                            Is it usefull for me.....</p>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="item-img bg-pink">
-                                        <img src="img/figure/student13.png" alt="img">
-                                    </div>
-                                    <div class="media-body space-sm">
-                                        <div class="item-title">
-                                            <a href="#">
-                                                <span class="item-name">Steven</span>
-                                                <span class="item-time">02:35</span>
-                                            </a>
-                                        </div>
-                                        <p>What is the reason of buy this item.
-                                            Is it usefull for me.....</p>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="item-img bg-violet-blue">
-                                        <img src="img/figure/student11.png" alt="img">
-                                    </div>
-                                    <div class="media-body space-sm">
-                                        <div class="item-title">
-                                            <a href="#">
-                                                <span class="item-name">Joshep Joe</span>
-                                                <span class="item-time">12:35</span>
-                                            </a>
-                                        </div>
-                                        <p>What is the reason of buy this item.
-                                            Is it usefull for me.....</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </li>
@@ -229,15 +151,6 @@ if (!$_SESSION['valid_user']) {
                             </div>
                         </div>
                     </li>
-                    <li class="navbar-item dropdown header-language">
-                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-globe-americas"></i>EN</a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">English</a>
-                            <a class="dropdown-item" href="#">Spanish</a>
-                            <a class="dropdown-item" href="#">Franchis</a>
-                            <a class="dropdown-item" href="#">Chiness</a>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -248,7 +161,7 @@ if (!$_SESSION['valid_user']) {
             <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
                 <div class="mobile-sidebar-header d-md-none">
                     <div class="header-logo">
-                        <a href="index-2.php"><img src="img/logo1.png" alt="logo"></a>
+                        <a href="index.php"><img src="img/logo1.png" alt="logo"></a>
                     </div>
                 </div>
                 <div class="sidebar-menu-content">
