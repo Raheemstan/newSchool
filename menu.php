@@ -3,7 +3,21 @@ include('dbc.php');
 if (!$_SESSION['valid_user']) {
     header('location: login.php');
 }
+function getName($table, $id): string
+{
+    global $link;
+    // Use prepared statements to prevent SQL injection
+    $sql = "SELECT name FROM $table WHERE id = ?";
+    $stmt = $link->prepare($sql);
+    $stmt->bind_param('i', $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
+    // Fetch the result as an associative array
+    $row = $result->fetch_assoc();
+
+    return $row['name'] ?? '';
+}
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -74,18 +88,7 @@ if (!$_SESSION['valid_user']) {
                 </button>
             </div>
             <div class="header-main-menu collapse navbar-collapse" id="mobile-navbar">
-                <ul class="navbar-nav">
-                    <li class="navbar-item header-search-bar">
-                        <div class="input-group stylish-input-group">
-                            <span class="input-group-addon">
-                                <button type="submit">
-                                    <span class="flaticon-search" aria-hidden="true"></span>
-                                </button>
-                            </span>
-                            <input type="text" class="form-control" placeholder="Find Something . . .">
-                        </div>
-                    </li>
-                </ul>
+                <ul class="navbar-nav"> </ul>
                 <ul class="navbar-nav">
                     <li class="navbar-item dropdown header-admin">
                         <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -186,10 +189,6 @@ if (!$_SESSION['valid_user']) {
                         <li class="nav-item sidebar-nav-item">
                             <a href="#" class="nav-link"><i class="flaticon-classmates"></i><span>Students</span></a>
                             <ul class="nav sub-group-menu">
-                                <li class="nav-item">
-                                    <a href="all-student.php" class="nav-link"><i class="fas fa-angle-right"></i>All
-                                        Students</a>
-                                </li>
                                 <li class="nav-item">
                                     <a href="student-details.php" class="nav-link"><i class="fas fa-angle-right"></i>Student Details</a>
                                 </li>

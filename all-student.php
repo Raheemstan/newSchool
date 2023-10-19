@@ -1,16 +1,17 @@
 <?php
 include('dbc.php');
-$class = $_GET['class'];
-$section = $_GET['section'];
-$sql = "SELECT * from students where class_id = $class and section_id = $section";
-$result = $link->query($sql);
 
-function getName($table, $id): string {
-    global $link;
-    $sql = "SELECT 'name' from $table where id = $id";
-    $result = $link->query($sql);
-    return $result['name'];
-}
+// Sanitize input to prevent SQL injection
+$class = (int) $_GET['class'];
+$section = (int) $_GET['section'];
+
+// Use prepared statements to prevent SQL injection
+$sql = "SELECT * FROM students WHERE class_id = ? AND section_id = ? order by admission_id";
+$stmt = $link->prepare($sql);
+$stmt->bind_param('ii', $class, $section);
+$stmt->execute();
+$result = $stmt->get_result();
+    
 ?>
 
 <!-- Student Table Area Start Here -->
@@ -22,42 +23,34 @@ function getName($table, $id): string {
         </div>
     </div>
 </form>
+
 <div class="table-responsive">
     <table class="table display data-table text-nowrap" id="table">
         <thead>
             <tr>
                 <th></th>
+                <th>Admission No</th>
                 <th>Name</th>
                 <th>Gender</th>
-                <th>Class</th>
-                <th>Section</th>
+                <!-- <th>Class</th>
+                <th>Section</th> -->
                 <th>Date Of Birth</th>
-                <th>Phone</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            <?php
-            while ($row = $result->fetch_assoc()) {
-            ?>
+            <?php while ($row = $result->fetch_assoc()) : ?>
                 <tr>
-                    <!-- <td>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input">
-                            <label class="form-check-label"><?php echo $row["admission_id"]; ?></label>
-                        </div>
-                    </td> -->
-                    <td class="text-center"><img src="uploads/<?php echo $row["photo_path"]; ?>" width="50" alt="student"></td>
-                    <td><?php echo $row["first_name"] . " " . $row['last_name']; ?></td>
-                    <td><?php echo $row["gender"]; ?></td>
-                    <td><?php echo $row["class_id"]; ?></td>
-                    <td><?php echo $row["section_id"]; ?></td>
-                    <td><?php echo $row["date_of_birth"]; ?></td>
-                    <td><?php echo $row["phone"]; ?></td>
+                    <td class="text-center"><img src="uploads/<?= htmlspecialchars($row["photo_path"]); ?>" width="50" alt="student"></td>
+                    <td><?= htmlspecialchars($row["admission_id"]); ?></td>
+                    <td>
+                        <a href="student-info.php?id=<?= print sha1($row['id']); ?>"><?= htmlspecialchars($row["first_name"] . " " . $row['last_name']); ?>
+                        </a>
+                    </td>
+                    <td><?= htmlspecialchars($row["gender"]); ?></td>
+                    <td><?= htmlspecialchars($row["date_of_birth"]); ?></td>
                 </tr>
-            <?php
-            }
-            ?>
+            <?php endwhile; ?>
         </tbody>
     </table>
 </div>
