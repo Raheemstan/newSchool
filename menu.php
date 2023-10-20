@@ -54,6 +54,63 @@ function getName($table, $id): string
     <link rel="stylesheet" href="css/datatables.css">
     <!-- Modernize js -->
     <script src="js/modernizr-3.6.0.min.js"></script>
+
+    <script>
+        function fetchStudents() {
+            const classID = document.getElementById("class").value;
+            const sectionID = document.getElementById("section").value;
+            const field = document.getElementById("studentinfo");
+            if (classID === '' || sectionID === '') {
+                field.innerHTML = "<span>Select class and section</span>";
+            }
+            field.innerHTML = "<span>Loading...</span>";
+
+            // Make an AJAX request to fetch LGAs based on the selected state
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "all-student.php?class=" + classID + "&section=" + sectionID, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    field.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i, j, txtValue;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("table");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows
+            for (i = 0; i < tr.length; i++) {
+                var displayRow = false;
+
+                // Loop through all columns in the current row
+                for (j = 0; j < tr[i].cells.length; j++) {
+                    td = tr[i].cells[j];
+
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+
+                        // Check if any column matches the search query
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            displayRow = true;
+                            break; // Break the loop if a match is found in any column
+                        }
+                    }
+                }
+                // Show or hide the row based on search result
+                if (displayRow) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
