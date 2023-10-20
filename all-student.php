@@ -11,9 +11,7 @@ $stmt = $link->prepare($sql);
 $stmt->bind_param('ii', $class, $section);
 $stmt->execute();
 $result = $stmt->get_result();
-    
 ?>
-
 <!-- Student Table Area Start Here -->
 <!-- Search form -->
 <form class="mg-b-20" id="searchForm">
@@ -32,8 +30,6 @@ $result = $stmt->get_result();
                 <th>Admission No</th>
                 <th>Name</th>
                 <th>Gender</th>
-                <!-- <th>Class</th>
-                <th>Section</th> -->
                 <th>Date Of Birth</th>
                 <th></th>
             </tr>
