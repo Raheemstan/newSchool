@@ -36,22 +36,15 @@ function fetchStudentCount($class, $section, $gender)
                 <h3>All Classes</h3>
             </div>
         </div>
-        <form class="mg-b-20">
-            <div class="row gutters-8">
-                <div class="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
-                    <input type="text" placeholder="Search by ID ..." class="form-control">
-                </div>
-            </div>
-        </form>
         <div class="table-responsive">
             <table class="table display data-table text-nowrap">
                 <thead>
                     <tr>
                         <th></th>
                         <th>Name</th>
-                        <th>Section</th>
-                        <th>Male Count</th>
-                        <th>Female Count</th>
+                        <th>Sections</th>
+                        <th>Male</th>
+                        <th>Female</th>
                         <th>Total</th>
                         <th></th>
                     </tr>
@@ -60,6 +53,7 @@ function fetchStudentCount($class, $section, $gender)
                     <?php
                     // Loop through classes
                     while ($classRow = mysqli_fetch_assoc($query)) :
+                        $sum = 0;
                     ?>
                         <tr>
                             <td>
@@ -74,22 +68,29 @@ function fetchStudentCount($class, $section, $gender)
                                 // Fetch sections for this class
                                 $sectionsQuery = mysqli_query($link, "SELECT * FROM sections");
                                 
+                                // Initialize arrays to store counts for each section
+                                $maleCounts = array();
+                                $femaleCounts = array();
+                                
                                 while ($section = mysqli_fetch_assoc($sectionsQuery)) {
                                     // Display section name
-                                    echo '<td>' .$section['name'] . '</td>';
+                                    echo $section['name'] . '<br>';
                                     
-                                    // Initialize counters for males and females for this section
+                                    // Count males and females for this section
                                     $maleCount = fetchStudentCount($classId, $section['id'], 'Male');
                                     $femaleCount = fetchStudentCount($classId, $section['id'], 'Female');
-                                    
-                                    // Print the counts in separate columns
-                                    echo '<td>' . $maleCount . '</td>';
-                                    echo '<td>' . $femaleCount . '</td>';
-                                    echo '<td>' . ($maleCount + $femaleCount) . '</td>';
+                                    $sum += $maleCount + $femaleCount;
+                                    // Store counts in arrays
+                                    $maleCounts[] = $maleCount;
+                                    $femaleCounts[] = $femaleCount;
                                 }
-                                ?>
+                                
+                                // Display the counts under respective columns
+                                echo '<td>' . implode('<hr>', $maleCounts) . '</td>';
+                                echo '<td>' . implode('<hr>', $femaleCounts) . '</td>';
+                            ?>
                             </td>
-                            <td></td>
+                            <td><?php echo $sum; ?></td>
                         </tr>
                     <?php
                     endwhile;
