@@ -51,7 +51,6 @@ function fetchStudentCount($class, $section, $gender)
                 </thead>
                 <tbody>
                     <?php
-                    // Loop through classes
                     while ($classRow = mysqli_fetch_assoc($query)) :
                         $sum = 0;
                     ?>

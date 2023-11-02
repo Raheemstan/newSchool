@@ -17,8 +17,6 @@ if ($studentId) {
 } else {
     echo "Invalid student ID";
 }
-
-// Add any additional logic or error handling as needed.
 ?>
 
 <!-- Breadcubs Area Start Here -->
