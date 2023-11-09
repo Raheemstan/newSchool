@@ -49,7 +49,9 @@ include('menu.php');
                 <h3>About Student</h3>
             </div>
         </div>
-        <span id="studentinfo"></span>
+        <span id="studentinfo">
+            <strong>Select the class and section from the above menu!</strong>
+        </span>
     </div>
 </div>
 <?php

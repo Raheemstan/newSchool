@@ -1,24 +1,23 @@
 <?php
-include('dbc.php');
+session_start();
+include('DatabaseHandler.php');
+
 if (!$_SESSION['valid_user']) {
     header('location: login.php');
 }
+
 function getName($table, $id): string
 {
-    global $link;
-    // Use prepared statements to prevent SQL injection
-    $sql = "SELECT name FROM $table WHERE id = ?";
-    $stmt = $link->prepare($sql);
-    $stmt->bind_param('i', $id);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    global $db; // Assuming $db is an instance of DatabaseHandler
+    $data = $db->fetchData($table, "id = $id");
 
     // Fetch the result as an associative array
-    $row = $result->fetch_assoc();
+    $row = $data->fetch_assoc();
 
     return $row['name'] ?? '';
 }
 ?>
+
 <!doctype html>
 <html class="no-js" lang="">
 
