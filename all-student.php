@@ -1,17 +1,22 @@
 <?php
-include('dbc.php');
+session_start();
+include('DatabaseHandler.php');
 
-// Sanitize input to prevent SQL injection
-$class = (int) $_GET['class'];
-$section = (int) $_GET['section'];
+try {
+    $db = new DatabaseHandler();
 
-// Use prepared statements to prevent SQL injection
-$sql = "SELECT * FROM students WHERE class_id = ? AND section_id = ? order by admission_id";
-$stmt = $link->prepare($sql);
-$stmt->bind_param('ii', $class, $section);
-$stmt->execute();
-$result = $stmt->get_result();
+    // Sanitize input to prevent SQL injection
+    $class = (int) $_GET['class'];
+    $section = (int) $_GET['section'];
+
+    // Use prepared statements to prevent SQL injection
+    $condition = "class_id = $class AND section_id = $section ORDER BY admission_id";
+    $students = $db->fetchData('students', $condition);
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
 ?>
+
 <!-- Student Table Area Start Here -->
 <!-- Search form -->
 <form class="mg-b-20" id="searchForm">
@@ -35,18 +40,19 @@ $result = $stmt->get_result();
             </tr>
         </thead>
         <tbody>
-            <?php while ($row = $result->fetch_assoc()) : ?>
+            <?php foreach ($students as $student) : ?>
                 <tr>
-                    <td class="text-center"><img src="uploads/<?= htmlspecialchars($row["photo_path"]); ?>" width="50" alt="student"></td>
-                    <td><?= htmlspecialchars($row["admission_id"]); ?></td>
+                    <td class="text-center"><img src="uploads/<?= htmlspecialchars($student["photo_path"]); ?>" width="50" alt="student"></td>
+                    <td><?= htmlspecialchars($student["admission_id"]); ?></td>
                     <td>
-                        <a href="student-info.php?id=<?= print sha1($row['id']); ?>"><?= htmlspecialchars($row["first_name"] . " " . $row['last_name']); ?>
+                        <a href="student-info.php?id=<?= print sha1($student['id']); ?>">
+                            <?= htmlspecialchars($student["first_name"] . " " . $student['last_name']); ?>
                         </a>
                     </td>
-                    <td><?= htmlspecialchars($row["gender"]); ?></td>
-                    <td><?= htmlspecialchars($row["date_of_birth"]); ?></td>
+                    <td><?= htmlspecialchars($student["gender"]); ?></td>
+                    <td><?= htmlspecialchars($student["date_of_birth"]); ?></td>
                 </tr>
-            <?php endwhile; ?>
+            <?php endforeach; ?>
         </tbody>
     </table>
 </div>

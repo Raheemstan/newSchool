@@ -1,8 +1,17 @@
 <?php
-$page = "Students Details";
 include('menu.php');
+
+try {
+    $db = new DatabaseHandler();
+    $classOptions = $db->fetchData("classes");
+
+    $sectionOptions = $db->fetchData("sections");
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
 ?>
-<!-- Breadcubs Area Start Here -->
+
+<!-- Breadcumbs Area Start Here -->
 <div class="breadcrumbs-area">
     <h3>Students</h3>
     <ul>
@@ -12,33 +21,22 @@ include('menu.php');
         <li>Student Details</li>
     </ul>
 </div>
-<!-- Breadcubs Area End Here -->
+<!-- Breadcumbs Area End Here -->
+
 <!-- Student Details Area Start Here -->
 <div class="card height-auto">
     <div class="row">
         <select name="class" class="form-control col-lg-4 col-xl-4 col-4-xxxl" id="class" onselect="">
             <option value="">Select Class</option>
-            <?php
-            $sql = "select * from classes";
-            $result = $link->query($sql);
-            while ($class = $result->fetch_assoc()) {
-            ?>
-                <option value="<?php echo $class['id']; ?>"><?php echo $class['name']; ?></option>
-            <?php
-            }
-            ?>
+            <?php foreach ($classOptions as $class) : ?>
+                <option value="<?= $class['id']; ?>"><?= $class['name']; ?></option>
+            <?php endforeach; ?>
         </select> &nbsp;
         <select name="section" class="form-control col-lg-4 col-xl-4 col-4-xxxl" id="section">
             <option value="">Select Section</option>
-            <?php
-            $sql = "select * from sections";
-            $result = $link->query($sql);
-            while ($class = $result->fetch_assoc()) {
-            ?>
-                <option value="<?php echo $class['id']; ?>"><?php echo $class['name']; ?></option>
-            <?php
-            }
-            ?>
+            <?php foreach ($sectionOptions as $section) : ?>
+                <option value="<?= $section['id']; ?>"><?= $section['name']; ?></option>
+            <?php endforeach; ?>
         </select>&nbsp;
         <button type="button" class="btn btn-primary col-lg-1 col-xl-1" onclick="fetchStudents()">Search</button>
     </div>
@@ -54,5 +52,7 @@ include('menu.php');
         </span>
     </div>
 </div>
+
 <?php
 include('footer.php');
+?>

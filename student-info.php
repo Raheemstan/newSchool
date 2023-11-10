@@ -1,12 +1,12 @@
 <?php
-$page = "Student Details";
+session_start();
 include('menu.php');
-include('DatabaseHandler.php');
+include('crudController.php');
 
 try {
     $db = new DatabaseHandler();
     $table = "students";
-    $studentId = $_GET['id']; // Corrected the variable name
+    $studentId = $_GET['id'];
     $condition = "id = $studentId";
     $data = $db->fetchData($table, $condition);
 } catch (Exception $e) {
@@ -25,8 +25,7 @@ try {
     </ul>
 </div>
 <!-- Breadcrumbs Area End Here -->
-
-<?php while ($row = $data->fetch_assoc()) : ?> <!-- Corrected the variable name -->
+<?php while ($row = $data->fetch_assoc()) : ?>
     <div class="single-info-details">
         <div class="item-img">
             <img src="uploads/<?= htmlspecialchars($row["photo_path"]); ?>" alt="student">
@@ -47,7 +46,34 @@ try {
                             <td>Admission Number:</td>
                             <td class="font-medium text-dark-medium"><?= htmlspecialchars($row["admission_id"]); ?></td>
                         </tr>
-                        <!-- Add other table rows as needed -->
+                        <tr>
+                            <td>Name:</td>
+                            <td class="font-medium text-dark-medium"><?= htmlspecialchars($row["first_name"] . " " . $row['last_name']); ?></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td class="font-medium text-dark-medium"><?= htmlspecialchars($row["gender"]); ?></td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth:</td>
+                            <td class="font-medium text-dark-medium"><?= htmlspecialchars($row["date_of_birth"]); ?></td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td class="font-medium text-dark-medium"><?= htmlspecialchars($row["phone"]); ?></td>
+                        </tr>
+                        <tr>
+                            <td>Registration Date:</td>
+                            <td class="font-medium text-dark-medium"><?= htmlspecialchars($row["created_at"]); ?></td>
+                        </tr>
+                        <tr>
+                            <td>Class:</td>
+                            <td class="font-medium text-dark-medium"><?= getName("classes", $row["class_id"]); ?></td>
+                        </tr>
+                        <tr>
+                            <td>Section:</td>
+                            <td class="font-medium text-dark-medium"><?= getName("sections", $row["section_id"]); ?></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
