@@ -69,24 +69,35 @@ class DatabaseHandler
         }
     }
 
-    public function fetchData($table, $condition = null)
+    public function fetchData($table, $condition = null, $types = null, $params = null)
     {
         $sql = "SELECT * FROM $table";
         if ($condition) {
             $sql .= " WHERE $condition";
         }
 
-        $result = $this->link->query($sql);
+        $stmt = $this->link->prepare($sql);
 
-        if ($result) {
-            $data = array();
-            while ($row = $result->fetch_assoc()) {
-                $data[] = $row;
+        if ($stmt) {
+            if (!empty($params)) {
+                $stmt->bind_param($types, ...$params);
             }
-            $result->close();
-            return $data;
+
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            if ($result) {
+                $data = array();
+                while ($row = $result->fetch_assoc()) {
+                    $data[] = $row;
+                }
+                $result->close();
+                return $data;
+            } else {
+                return "Error: " . $stmt->error;
+            }
         } else {
-            return "Error: " . $this->link->error;
+            return "Error in preparing the SQL statement.";
         }
     }
 

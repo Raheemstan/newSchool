@@ -10,8 +10,6 @@ function getName($table, $id): string
 {
     global $db; // Assuming $db is an instance of DatabaseHandler
     $data = $db->fetchData($table, "id = $id");
-
-    // Fetch the result as an associative array
     $row = $data->fetch_assoc();
 
     return $row['name'] ?? '';

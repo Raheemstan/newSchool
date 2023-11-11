@@ -10,12 +10,16 @@ try {
     $section = (int) $_GET['section'];
 
     // Use prepared statements to prevent SQL injection
-    $condition = "class_id = $class AND section_id = $section ORDER BY admission_id";
-    $students = $db->fetchData('students', $condition);
+    $condition = "class_id = ? AND section_id = ?";
+    $types = 'ii';
+    $params = [$class, $section];
+
+    $students = $db->fetchData('students', $condition, $types, $params);
 } catch (Exception $e) {
     echo $e->getMessage();
 }
 ?>
+
 
 <!-- Student Table Area Start Here -->
 <!-- Search form -->
@@ -45,7 +49,7 @@ try {
                     <td class="text-center"><img src="uploads/<?= htmlspecialchars($student["photo_path"]); ?>" width="50" alt="student"></td>
                     <td><?= htmlspecialchars($student["admission_id"]); ?></td>
                     <td>
-                        <a href="student-info.php?id=<?= print sha1($student['id']); ?>">
+                        <a href="student-info.php?id=<?= print $student['id']; ?>">
                             <?= htmlspecialchars($student["first_name"] . " " . $student['last_name']); ?>
                         </a>
                     </td>

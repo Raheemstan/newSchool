@@ -1,14 +1,17 @@
 <?php
-session_start();
 include('menu.php');
-include('crudController.php');
 
 try {
     $db = new DatabaseHandler();
     $table = "students";
     $studentId = $_GET['id'];
-    $condition = "id = $studentId";
-    $data = $db->fetchData($table, $condition);
+
+    // Use prepared statements to prevent SQL injection
+    $condition = "id = ?";
+    $types = 's';
+    $params = [$studentId];
+
+    $data = $db->fetchData($table, $condition, $types, $params);
 } catch (Exception $e) {
     echo $e->getMessage();
 }
@@ -25,7 +28,8 @@ try {
     </ul>
 </div>
 <!-- Breadcrumbs Area End Here -->
-<?php while ($row = $data->fetch_assoc()) : ?>
+
+<?php foreach ($data as $row) : ?>
     <div class="single-info-details">
         <div class="item-img">
             <img src="uploads/<?= htmlspecialchars($row["photo_path"]); ?>" alt="student">
@@ -79,6 +83,6 @@ try {
             </div>
         </div>
     </div>
-<?php endwhile; ?>
+<?php endforeach; ?>
 
 <?php include('footer.php'); ?>
